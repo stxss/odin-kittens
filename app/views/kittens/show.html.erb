@@ -1,0 +1,3 @@
+<%= @kitten %>
+
+<%= link_to "Delete kitten", kitten_path(@kitten), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %><br />

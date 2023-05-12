@@ -1,0 +1,11 @@
+All kittens should appear here
+
+<% @kittens.each do |k| %>
+  <div>
+    <%= k.name %>
+    <%= k.age %>
+    <%= k.cuteness %>
+    <%= k.softness %>
+    <%= link_to "Delete kitten", kitten_path(k), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %><br />
+    </div>
+<% end %>
